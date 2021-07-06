@@ -12,6 +12,7 @@ import Combine
 // SwiftUI subscribes to the ObservableObject and updates related views when data changes
 final class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = load("landmarkData.json")
+    var hikes: [Hike] = load("hikeData.json")
 }
 
 func load<T: Decodable>(_ filename: String) -> T {

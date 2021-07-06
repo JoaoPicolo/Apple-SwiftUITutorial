@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
+// Codable conforms properties that matches the keys in data file
 struct Landmark: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
